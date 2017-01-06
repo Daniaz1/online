@@ -242,16 +242,18 @@ public class Online_Shopping {
 
                                                 break;
                                             case 4:
-                                                System.out.println(" press '1' for Delete all order or  '2' for Some Order");
+                                                System.out.println(" press '1' for Delete all order ");
+                                                //press 2 if you want to delete some
                                                 int y = in.nextInt();
                                                 if (y == 1) {
                                                     customer[i].deleteOrder("all");
-                                                } else if (y == 2) {
-                                                    customer[i].viewOrder();
-                                                    System.out.println("Enter the ID for Delete");
-                                                    String u = in.next();
-                                                    customer[i].deleteOrder(u);
-                                                } else {
+                                                }// else if (y == 2) {
+                                                   // customer[i].viewOrder();
+                                                    //System.out.println("Enter the ID for Delete");
+                                                    //String u = in.next();
+                                                    //customer[i].deleteOrder(u);
+                                               // } 
+                                                else {
                                                     System.out.print("Wrong number");
                                                 }
                                                 break;
