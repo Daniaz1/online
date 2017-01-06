@@ -20,13 +20,12 @@ public class Customer extends User {
     private String Email;
     private String Phone_Number;
     private String creditCard;
-  // private Order[] Order;
+
     
     private String[] order=new String[10];
     private bag[] bags;
     private Clothes[] clothes;
-//  ArrayList<bag> p_bag = new ArrayList<bag>(Arrays.asList(bags));
-//   private ArrayList<Clothes> p_clothes = new ArrayList<Clothes>(Arrays.asList(clothes));
+
      private int r = 0;
     
     private int i = 0; 
@@ -122,13 +121,7 @@ public class Customer extends User {
     }
 
     
-  /*  public void AddOrder(Product o) {
-        if(o instanceof bag)
-           t[i]=Order[i].addbag(o); 
-            Order[i] = order ;
-           i++;
-   }*/
-    
+  
    
    
 
@@ -139,7 +132,7 @@ order[i]=b.getP_id()+" "+b.getB_brand();
 
 //b.toString();
 
-        //Order[i].addbag(b);
+       
 System.out.print(order[i]);
      
   i++;
@@ -153,9 +146,7 @@ public void addclothe(Clothes c)
   i++;
 }
     public void viewOrder() {
-     //   Order[i].viewOrder(t);
-      //  System.out.println("yor"+ Order[i].viewOrder(t));
-      
+    
         
             
            for(int i=0;i<order.length;i++)
@@ -174,51 +165,24 @@ public void addclothe(Clothes c)
              
            }
         
-        }
+        
         
       
-    /*    public void deleteOrder(String o) 
-       {
-            for(int i=0;i<order.length;i++)
-               if (o.equalsIgnoreCase(order[i]))
-               { order[i]=null;
-               System.out.print("Delete Done");
-               }
-               // p_clothes.remove(i);
-            else if (o.equalsIgnoreCase("all"))
+        public void deleteOrder(String o) 
+       {//if you want to delete some 
+            //for(int i=0;i<order.length;i++)
+            //   if (o.equalsIgnoreCase(order[i]))
+              // { order[i]=null;
+              // System.out.print("Delete Done");
+              // }
+              
+           // else if 
+             (o.equalsIgnoreCase("all"))
           for(int j=0;j<order.length;j++)
                    order[j]=null;
             
-                    }}//}
+                    }}
 
     
 
     
- /*   public void AddOrder(Order order,int type) {
-        Order_A.add(order);
-        i=Order_A.size();
-        if (type==2){
-            Order[i].AddClothes(null);
-        }
-    }
-
-    public void viewOrder() {
-        for(int i=0;i<Order_A.size();i++){
-            System.out.println((i+1)+Order[i].toString());         
-        }
-        
-
-    }
-    
-   public void removeOrder(String id){
-        for(int i=0;i<Order_A.size();i++){
-            if(Order[i].getOrder_ID().equals(id)){
-                Order_A.remove(i);
-                
-            }       
-        }
-    }
-
-}*/
-
-
