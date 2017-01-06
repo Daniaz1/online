@@ -22,17 +22,16 @@ public class Online_Shopping {
     static bag[] bags = new bag[5];
     static Clothes[] clothes = new Clothes[10];
     static Customer[] customer = new Customer[20];
-    // static ArrayList<bag> p_bag = new ArrayList<bag>();
-    // static ArrayList<Clothes> p_clothes = new ArrayList<Clothes>();
+   
     static Admin admin = new Admin("abeer","abeer@gmail.com","abeer","10018","1234","Female", "ksa" );
 
-    //static Order[] P_order;
+  //counter for customer and bag and clothes 
     static int con_c = 0, con_b = 3, con_cl = 4;
-   // static int con_ca = 0;
+  
     static int y = 0;
 
     public static void main(String[] args) {
-       // boolean io;
+      //clothes and bag in our system (just example)
         clothes[0] = new Clothes("45r", "Classic Dress", 6500.30, "Pink", "M", 1, "Channel");
         clothes[1] = new Clothes("47b", "blouse       ", 600.30, "black", "M", 1, "Juicy Couture");
         clothes[2] = new Clothes("48g", "jacket       ", 750.00, "Green", "L", 1, "Juicy Couture");
@@ -41,6 +40,8 @@ public class Online_Shopping {
 
         bags[1] = new bag("42r", "CH           ", 3799.5, "Red", "L    ", 1, "CH", true);
         bags[2] = new bag("22b", "Prada        ", 6300.89, "Green", "micro", 1, "Prada", true);
+        
+        
         admin.AddBag(bags[0]);
         admin.AddBag(bags[1]);
         admin.AddBag(bags[2]);
@@ -110,14 +111,7 @@ public class Online_Shopping {
                                                 int q = in.nextInt();
                                                 System.out.println("Brand");
                                                 String br = in.next();
-                                                // System.out.println("Is it original?");
-                                                // String o = in.next();
-                                                // if (o.equalsIgnoreCase("yes")) {
-                                                //     io = true;
-                                                // } else {
-                                                //    io = false;
-                                                // }
-
+                                             
                                                 bags[con_b] = new bag(b_name, idb, p, co, si, q, br, true);//io);
                                                 admin.AddBag(bags[con_b]);
                                                 con_b++;
